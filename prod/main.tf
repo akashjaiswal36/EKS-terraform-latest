@@ -52,7 +52,7 @@ module "eks" {
       max_size     = 1
       desired_size = 1
 
-      capacity_type  = "ON_DEMAND"
+      capacity_type  = "SPOT"
       instance_types = ["t3.medium"]
       ami_type = "AL2023_x86_64_STANDARD"
 
